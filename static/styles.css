@@ -1,0 +1,125 @@
+textarea {
+  height: 200px;
+  width: 300px;
+}
+.input-style:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.jumbotron {
+  background-color: yellow;
+}
+.original_tittle {
+  /* background-color: rgb(225, 177, 177); */
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+}
+
+.summary_tittle {
+  /* background-color: green; */
+  font-size: 2rem;
+
+  font-weight: bold;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+}
+
+.srt {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.originalTxt {
+  font-size: 20px;
+  background-color: rgb(155, 244, 244);
+  padding: 2rem;
+  border-radius: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+  box-shadow: 1px 20px 8px #bebebe, -15px -15px 30px #ffffff;
+}
+
+.summaryTxt {
+  font-size: 20px;
+  background-color: rgb(255, 215, 162);
+  padding: 2rem;
+  border-radius: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+  box-shadow: 1px 20px 8px #bebebe, -15px -15px 30px #ffffff;
+}
+
+.heading {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+.lead {
+  display: flex;
+  justify-content: center;
+}
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 1px solid #4f4f4f;
+  border-radius: 4px;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  font-size: 19px;
+  cursor: pointer;
+  color: black;
+  z-index: 1;
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #39bda7;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button:hover {
+  color: #ffffff;
+  border: 1px solid #39bda7;
+}
+
+.button:hover:before {
+  top: -35%;
+  background-color: #39bda7;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button:hover:after {
+  top: -45%;
+  background-color: #39bda7;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
